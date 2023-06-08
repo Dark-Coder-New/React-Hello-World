@@ -15,11 +15,19 @@ const App = ()=>{
                 
                 <Button 
                  btnText="Apple"
+                 color = "red"
                 />
 
                 <Button 
                  btnText="Mango"
+                 color = "yellow"
+                 
                 />
+
+                <Button btnText="Banana" color = "green">
+                    <p>lorem ipsum dolor sit amet</p>
+                    <p>lorem ipsum dolor sit amet</p>
+                </Button>
 
 
 

@@ -1,21 +1,24 @@
 
 
-const Button = (props) =>{
+const Button = ({btnText, color, children}) =>{
 
-    console.log(props, typeof props)
+    // console.log(props, typeof props)
 
-    // props = { btnText:"Apple"}
+    // props = { btnText:"Apple" ,  color: "red" }
+
+    // props.btnText = "Fruit"
+
+    // let btnStyle = {backgroundColor: "black", color: "white"}
     
 
     return(
         <div>
-             {/* <p> {a} </p>
-             <p>  {6+3+5} </p> */}
-             <button className="btn">
-                   {props.btnText}
-             </button>
-        </div>
-        
+             {children}
+            <button style={{backgroundColor: color}} >
+                {btnText}  
+            </button>
+            
+         </div>
     )
 
 
@@ -23,3 +26,14 @@ const Button = (props) =>{
 
 
 export default Button
+
+
+
+// // <div>
+//              {/* <p> {a} </p>
+//              <p>  {6+3+5} </p> */}
+//              <button className="btn">
+//                    {props.btnText}
+//              </button>
+//              <p> {props.paraText}</p>
+//         </div>
